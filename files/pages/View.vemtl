@@ -1,4 +1,8 @@
 <?php
+/**
+*  Generated with: soluciones-pixel-vemto-filament-plugin
+*  infosolucionespixel@gmail.com
+*/
 <# TEMPLATE VARIABLES #>
 <% let crudModelName = this.crud.model.name %>
 <####>

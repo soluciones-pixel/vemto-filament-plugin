@@ -1,5 +1,8 @@
 <?php
-
+/**
+*  Generated with: soluciones-pixel-vemto-filament-plugin
+*  infosolucionespixel@gmail.com
+*/
 namespace App\Filament\Filters;
 
 use Filament\Tables\Filters\Filter;

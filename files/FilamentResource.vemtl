@@ -1,4 +1,8 @@
 <?php
+/**
+*  Generated with: soluciones-pixel-vemto-filament-plugin
+*  infosolucionespixel@gmail.com
+*/
 <# TEMPLATE VARIABLES #>
 <% let crudModelName = this.crud.model.name %>
 <% let crudPluginData = this.crud.pluginConfig %>
@@ -6,7 +10,7 @@
 <####>
 
 namespace App\Filament\Resources;
-//generated with: soluciones-pixel-vemto-filament-plugin
+
 use <$ modelsNamespace $>\<$ crudModelName $>;
 use Filament\{
     Tables, Forms

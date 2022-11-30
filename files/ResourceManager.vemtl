@@ -1,10 +1,14 @@
 <?php
+/**
+*  Generated with: soluciones-pixel-vemto-filament-plugin
+*  infosolucionespixel@gmail.com
+*/
 <# TEMPLATE VARIABLES #>
 <% let crudPluginData = this.crud.pluginConfig %>
 <####>
 
 namespace App\Filament\Resources\<$ this.inverseRelationshipModel.name $>Resource\RelationManagers;
-//generated with: soluciones-pixel-vemto-filament-plugin
+
 use Filament\Forms;
 use Filament\Tables;
 use Filament\Resources\{
@@ -221,6 +225,7 @@ class <$ this.crud.model.plural.case('pascalCase') $>RelationManager extends Rel
                 <% } %>
             ])
             ->headerActions([
+                Tables\Actions\AssociateAction::make(),
                 Tables\Actions\CreateAction::make(),
             ])
             ->actions([
@@ -228,6 +233,7 @@ class <$ this.crud.model.plural.case('pascalCase') $>RelationManager extends Rel
                 Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
+                Tables\Actions\DissociateBulkAction::make(),
                 Tables\Actions\DeleteBulkAction::make(),
             ]);
     }
